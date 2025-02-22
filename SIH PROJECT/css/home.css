@@ -1,0 +1,98 @@
+.carousel-item{
+    height: 100%;
+}
+.navbar-brand{
+    height: 140;
+    width: 363;
+}
+.navbar navbar-expand-lg bg-body-tertiary{
+    display: flex;
+    background-color: #788780;
+}
+#container{
+    height:300px;
+    width:100%;
+    background-color:white;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:center; 
+}
+ .box{
+    height:250px;
+    width: 250px;
+    background-color:grey;
+    font-size:20px;
+    text-align:center;
+    box-shadow: 2px 4px 8px black;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-size: cover;
+   
+} 
+.box:hover{
+box-shadow: 4px 8px 16px black;
+}
+
+#containerr{
+    height:400px;
+    width:100%;
+   display: flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    
+}
+.card{
+    height:250px;
+    width: 250px;
+   
+    font-size:20px;
+    text-align:center;
+    box-shadow: 2px 4px 8px black;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-size: cover;}
+.card:hover{
+    box-shadow: 4px 8px 16px black;
+    color: chartreuse;
+    background-color: blue;
+    }
+
+    footer {
+        background-color: black;
+      }
+      .footerContainer {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: row;
+        min-height: 200px;
+        width: 90dvw;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: start;
+        column-gap: 80px;
+        background-color: black;
+        color: wheat;
+        /* justify-content: space-around; */
+        padding: 20px;
+        border-radius: 10px 10px 0 0;
+      }
+      .innerFooter {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      .innerFooter > h1 {
+        text-transform: uppercase;
+        opacity: 0.3;
+      }
+      .social {
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      .socialIcon {
+        display: flex;
+        column-gap: 15px;
+      }

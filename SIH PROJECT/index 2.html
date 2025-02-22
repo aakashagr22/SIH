@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sansthaein Aur Samvidhan: Learn the Constitution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sansthaein Aur Samvidhan: Learn the Constitution</h1>
+            <p>Let's Learn the Constitution in a Simpler Manner</p>
+        </header>
+
+        <nav>
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('spinWheel')">Spin the Wheel</button>
+            <button onclick="showSection('constitutionCards')">Constitution Cards</button>
+            <button onclick="showSection('quiz')">Quiz</button>
+            
+        </nav>
+
+        <main>
+            
+            <section id="home" class="content-section">
+                <h2>Welcome to Sansthaein Aur Samvidhan</h2>
+                <div class="insight-box">
+                    <strong>Problem Statement ID:</strong> 1699<br>
+                    <strong>Organization:</strong> Ministry of Law & Justice<br>
+                    <strong>Department:</strong> Department of Justice<br>
+                    <strong>Category:</strong> Software<br>
+                    <strong>Theme:</strong> Miscellaneous
+                </div>
+                <p>This application is designed to spread constitutional literacy among citizens...</p>
+            </section>
+
+            <section id="spinWheel" class="content-section">
+                <h2>Spin the Wheel: Constitution Edition</h2>
+                <select id="organSelect">
+                    <option value="Legislature">Legislature</option>
+                    <option value="Executive">Executive</option>
+                    <option value="Judiciary">Judiciary</option>
+                </select>
+                <p id="wheelResult"></p>
+            
+                <canvas id="wheel" width="20px" height="20px"></canvas> 
+                <button id="spin-btn">Spin the Wheel</button>
+                <a href="Articles.html"><div id="final-value"></div></a>
+            </section>
+            
+            <section id="constitutionCards" class="content-section" style="display: none;">
+                <h2>Constitution Cards</h2>
+                <button onclick="drawCard()">Draw a Card</button>
+                <a href="Articles.html"><p id="cardResult"></p></a>
+            </section>
+
+            <section id="quiz" class="content-section" style="display: none;">
+                <h2>Constitution Quiz</h2>
+                <p id="quizQuestion"></p>
+                <input type="text" id="quizAnswer" placeholder="Enter the article number">
+                <button onclick="submitQuizAnswer()">Submit Answer</button>
+                <a href="Articles.html"><p id="quizFeedback"></p></a>
+                <p>Current Score: <span id="quizScore">0</span></p>
+            </section>
+
+            
+        </main>
+
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
